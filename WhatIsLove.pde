@@ -23,8 +23,9 @@ void draw(){
   pushMatrix();
   translate(width/2, height/2);
   noStroke();
+  fill(255, 0, 0);
   circle(-20, 0, 50);
   circle(20, 0, 50);
-  square(-20, 0, 50);
+  square(-23, 0, 50);
   popMatrix();
 }
