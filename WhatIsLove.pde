@@ -15,8 +15,15 @@ AudioPlayer ap;
 
 void setup() {
   size(500, 500);
+  
+  minim = new Minim(this);
+  ap = minim.loadFile("WhatisLove.mp3", 1024);
+  ap.play();
+  ap.loop();
+  ab = ap.mix;
 
 }
+float lerpedAverage = 0;
 
 void draw(){
   background(0);
